@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+body {
+    position: relative;
+    top: 56px;
+    background-image: url("../img/6.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.item {
+    scroll-snap-align:  start;
+}
+header {
+    color: black;
+    background-color: wheat;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: grid;
+    grid-template-columns:  1px 5fr 2fr ;
+    align-items: center;
+    color: black;
+    justify-content: center;
+    
+}
+.header-logo {
+    display: grid;
+    grid-template-columns: 50px 100px;
+    align-items: center;
+}
+a {
+   padding-left: 100px;
+   font-size: 18px;
+   color: black;
+}
+.logo {
+    pointer-events: none;
+    position: relative;
+    bottom: 15px;
+}
+.text-logo {
+    user-select: none;
+    font-size: 35px;
+    font-weight: 100;
+
+}
+.header-number {
+    display: grid;
+}
+.header-number {
+    position: relative;
+    left: 150px;
+}
+.section-main {
+    height: 550px;
+    display: grid;
+    grid-template-columns: 100%;
+}
+h1 {
+    position: relative;
+    left: 31%;
+    top: 25px;
+    width: 300px;
+    font-size: 50px;
+}
+button {
+    position: relative;
+    left: 31%;
+    bottom: 100px;
+    width: 150px;
+    height: 50px;
+    background-color: purple;
+    color: wheat;
+    outline: none;
+    border-radius: 45px;
+    border: 0;
+}
+.border {
+    width: 50%;
+    height: 50px;
+    background-color: black;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.section {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    background-color: black;
+}
+h3 {
+    user-select: none;
+    font-size: 35px;
+    color: yellow;
+}
+h4 {
+    position: relative;
+    left: 25.5%;
+    width: 50%;
+    font-size: 25px;
+    color: wheat;
+    padding: 20px;
+}
+h5 {
+    padding: 20px;
+    padding: 15px;
+    font-size: 26px;
+    width: 300px;
+    color: wheat;
+}
+span {
+    font-size: 35px;
+    color: red;
+}
+.section {
+    scroll-snap-align: y start;
+}
+main {
+    overflow-y: hidden;
+    scroll-snap-type: y mandatory;
+}
+footer {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    height: 50px;
+    color: aqua;
+    background-color: black;
+}
+.section-cards {
+    padding: 20px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+}
+img {
+    padding-top: 25px;
+}
+.map {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.map-plot {
+    color: wheat;
+    width: 500px;
+    padding: 20px;
+}
+.location {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    background-color: black;
+    color: wheat;
+    font-size: 45px;
+}
+.iframe {
+    position: relative;
+    top: 25px;
+
+}
+.contacts {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 40% 30%;
+    background-color: black;
+    color: wheat;
+    justify-content: center;
+    align-items: center;
+}
+.contact-number {
+    font-size: 35px;
+}
+.svg-social {
+    font-size: 25px;
+    border-radius: 100px;
+}
+.empty-block {
+    display: grid;
+    grid-template-columns: 100%;
+    min-height: 2vh;
+    background-color: black;
+}
+.popup-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.popup {
+   padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    background-color: wheat;
+    transform: translate(-50%, -50%) ;
+    border-bottom: 15px solid wheat;
+}
+.close:hover {
+    background-color: rgb(176, 42, 42);
+    transition: 500ms;
+}
+.close:active {
+    background-color: magenta;
+}
+.close {
+    cursor: pointer;
+    position: relative;
+    left: 170px;
+    bottom: 10px;
+    font-size: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 10px;
+    background-color: red;
+    color: white;
+    user-select: none;
+}
+.send {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    top: 10px;
+    left: 35px;
+    background-color: blue;
+}
+.caption {
+    color: maroon;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 900;
+}
+.open:active {
+    background-color: rgb(32, 7, 32);
+}
